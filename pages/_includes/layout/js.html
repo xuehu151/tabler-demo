@@ -1,0 +1,22 @@
+<script>
+	window.tabler_colors = { {% for color in site.colors %}
+	'{{ color[0] }}': '{{ color[1].hex }}',{% endfor %}
+	};
+</script>
+
+{% if site.data.libs %}
+   <!-- Libs JS -->
+   {% for lib in site.data.libs.js %}
+   <script src="{{ site.base }}/{% if jekyll.environment == 'production' %}dist/libs{% else %}node_modules{% endif %}/{% if jekyll.environment == 'production' %}{{ lib | replace: '@', '' }}{% else %}{{ lib }}{% endif %}?{{ site.time | date: '%s' }}"></script>
+   {% endfor %}
+{% endif %}
+
+<!-- Tabler Core -->
+<script src="{{ site.base }}/dist/js/tabler{% if jekyll.environment == 'production' %}.min{% endif %}.js?{{ site.time | date: '%s' }}"></script>
+
+<!-- Tabler Plugins -->
+<script src="{{ site.base }}/dist/js/tabler-charts{% if jekyll.environment == 'production' %}.min{% endif %}.js?{{ site.time | date: '%s' }}"></script>
+
+{% removeemptylines %}
+{{ site.capture_global.scripts }}
+{% endremoveemptylines %}

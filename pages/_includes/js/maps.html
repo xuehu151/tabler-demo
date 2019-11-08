@@ -1,0 +1,9 @@
+<script>
+	$(document).ready(function () {
+		$('#{{ include.id }}').each(function () {
+			$(this).vectorMap({
+				map: '{{ include.data[1].map }}'
+			});
+		});
+	})
+</script>

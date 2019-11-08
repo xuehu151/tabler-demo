@@ -1,0 +1,44 @@
+.table {
+  color: inherit;
+
+  thead {
+    th {
+      background: $min-black;
+      border-width: $table-border-width;
+      @include subheader;
+    }
+  }
+
+  th {
+    color: $text-muted;
+  }
+}
+
+.table-nowrap {
+  th,
+  td {
+    white-space: nowrap;
+  }
+}
+
+
+.table-md {
+  th,
+  td {
+    padding: .5rem;
+  }
+}
+
+.table-vcenter {
+  td,
+  th {
+    vertical-align: middle;
+  }
+}
+
+.table-center {
+  td,
+  th {
+    text-align: center;
+  }
+}

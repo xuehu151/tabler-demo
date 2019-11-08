@@ -1,0 +1,55 @@
+home:
+  url: index.html
+  title: Dashboard
+  icon: home
+
+forms:
+  url: form-elements.html
+  title: Form elements
+  icon: check-square
+
+cards:
+  url: cards.html
+  title: Cards
+  icon: file
+
+charts:
+  url: charts.html
+  title: Charts
+  icon: pie-chart
+
+calendar:
+  title: Calendar
+  icon: calendar
+  url: calendar.html
+
+users:
+  title: Users
+  icon: users
+  url: users.html
+
+gallery:
+  title: Gallery
+  icon: image
+  url: gallery.html
+
+layouts:
+  title: Layouts
+  icon: layout
+  url: layouts.html
+
+docs:
+  title: Documentation
+  icon: file-text
+  url: docs/index.html
+
+#changelog:
+#  url: changelog.html
+#  title: Changelog
+#  icon: file-plus
+#  label: v1.0
+
+components:
+  url: components.html
+  title: Components
+  icon: truck

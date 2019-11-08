@@ -1,0 +1,24 @@
+.chart {
+  display: block;
+  min-height: 10rem;
+
+  text {
+    font-family: inherit;
+  }
+}
+
+.chart-sm {
+  height: 2.5rem;
+  //outline: 1px solid red;
+}
+
+.chart-square {
+  height: 5.75rem;
+  //outline: 1px solid red;
+}
+
+.chart-placeholder {
+  background-image: linear-gradient(135deg, $border-color 25%, transparent 25%, transparent 50%, $border-color 50%, $border-color 75%, transparent 75%, transparent 100%);
+  background-size: 14.14px 14.14px;
+}
+
