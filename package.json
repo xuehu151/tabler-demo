@@ -100,7 +100,7 @@
     "bootstrap": "twbs/bootstrap#81541b9",
     "fullcalendar": "3.10.1",
     "imask": "5.2.1",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "jqvmap": "1.5.1",
     "peity": "3.3.0",
     "selectize": "0.12.6"
